@@ -2,16 +2,17 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
-<body>
-	<form>
+<body id="body2">
+	<form id="for">
 
-Name<input type="text" pattern="[A-Za-z]{2,}" title="unicamente nombre de productos" tabindex="1" required="required">
+Name<input id="input3"  type="text" pattern="[A-Za-z]{2,}" title="unicamente nombre de productos" tabindex="1" required="required">
 <br><br>
-Price<input type="text" name="price" pattern="[0-5]{5}">
+Price<input type="text" name="price" required pattern="^\d*\.?\d*$">
 <br>
-	<input type="checkbox" checked="checked" name="UP" required="Update">
-	<button>Update</button>
+	<input id="input3"  type="checkbox" checked="checked" name="UP" required="Update">
+	<button id="butons">Update</button>
 </form>
 </body>
 </html>
