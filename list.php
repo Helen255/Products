@@ -35,19 +35,19 @@ catch(PDOException $e)
 $conn = null;
 ?> 
 
-<table>
-    <tr>
+<table id="customer">
     
-<?php foreach ($result as $value) {
+<?php foreach ($result as $value) { ?>
 
- }?>
-
-<?php    echo "<br>" . $value["product_name"];   ?>
-<?php    echo "<br>" . $value["price"];   ?>
  
 
-</tr>
+ <?php    echo "<br>" . $value["product_name"];   ?>
+ <?php    echo "<br>" . $value["price"];   ?>
+ 
+
+
 </table>
+<?php } ?>
 
 
 
